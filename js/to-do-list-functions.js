@@ -4,15 +4,22 @@ $(document).ready(function(){
 	var addButton = $('.add');
 
 	$(addButton).click(function(){
-
     	var toAdd = $('input[name=ListItem]').val();    
+		
 		$(ToDolist).append('<li>' + toAdd + '<button class="delete">Delete</button>' + '</li>');
 		$('li').addClass('list-item');
 
-	$('.delete').click(function(e){
-		$(e.currentTarget).parent('.list-item').remove();
+		$('.delete').click(function(e){
+			$(e.currentTarget).parent('.list-item').remove();
+		});
 	});
 
+	var mike = $('.mike');
+
+	$(mike).on('click', function(e){
+
+		$(e.currentTarget).parent('p, .item').remove();
 
 	});
+
 });
