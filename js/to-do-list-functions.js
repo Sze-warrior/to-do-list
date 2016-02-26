@@ -6,13 +6,11 @@ $(document).ready(function(){
 	$(addButton).click(function(){
 
     	var toAdd = $('input[name=ListItem]').val();    
-		$(ToDolist).append('<li class="list-item">' + toAdd + '<button class="delete">Delete</button>' + '</li>');
+		$(ToDolist).append('<li>' + toAdd + '<button class="delete">Delete</button>' + '</li>');
+		$('li').addClass('list-item');
 
 	$('.delete').click(function(e){
-
-		$(e.currentTarget).hide();
-		$('.list-item').hide();
-
+		$(e.currentTarget).parent('.list-item').remove();
 	});
 
 
