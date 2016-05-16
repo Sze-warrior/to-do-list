@@ -1,7 +1,5 @@
-.add { width: 80px; height: 80px; color: white; background-color: green; }
+.btn-add { width: 80px; height: 80px; color: white; background-color: green; }
 
 body { background: blue; color: white; }
-
-.red { background: red; }
 
 /*# sourceMappingURL=main.css.map */

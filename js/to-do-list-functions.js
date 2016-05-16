@@ -1,25 +1,17 @@
 $(document).ready(function(){
 
-	var ToDolist = $('.list-of-things');
-	var addButton = $('.add');
+	var taskList = $('.task-list');
+	var addButton = $('.btn-add');
 
 	$(addButton).click(function(){
-    	var toAdd = $('input[name=ListItem]').val();    
+    	var taskAdded = $('input[name=ListItem]').val();
 		
-		$(ToDolist).append('<li>' + toAdd + '<button class="delete">Delete</button>' + '</li>');
-		$('li').addClass('list-item');
+		$(taskList).append('<li>' + taskAdded + '<button class="delete">Delete</button>' + '</li>');
+		$(taskList).children('li').addClass('list-item');
 
 		$('.delete').click(function(e){
 			$(e.currentTarget).parent('.list-item').remove();
 		});
-	});
-
-	var mike = $('.mike');
-
-	$(mike).on('click', function(e){
-
-		$(e.currentTarget).parent('p, .item').remove();
-
 	});
 
 });
