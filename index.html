@@ -22,7 +22,12 @@
 	</section>
 </main>
 
-<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="js/to-do-list-functions.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+	if (typeof jQuery == 'undefined') {
+		document.write('<script src="js/jquery-1.12.0.min.js">\x3C/script>');
+}
+	</script><script src="js/to-do-list-functions.js"></script>
 </body>
 </html>
