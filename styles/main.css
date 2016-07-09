@@ -1,13 +1,21 @@
-.btn-add { width: 80px; height: 40px; color: white; background-color: green; border-radius: 4px; margin-left: 15px; font-size: 14px; border: none; }
+.btn-add { width: 80px; height: 40px; color: white; background-color: #109C4A; border-radius: 4px; margin-left: 15px; font-size: 14px; border: none; -webkit-transition: 0.5s; transition: 0.5s; }
+.btn-add:focus { background-color: #0c7738; }
+.btn-add:hover { background-color: #0c7738; -webkit-transition: 0.5s; transition: 0.5s; }
 
 .table-container { display: table; width: 100%; }
 .table-container .table-cell { display: table-cell; width: 100%; }
 
-body { margin: 0; padding: 0; color: red; }
-body header { background: blue; height: 50px; margin-bottom: 15px; text-align: center; }
+body { margin: 0; padding: 0; color: red; font-family: "Helvetica", "Arial", "Times new roman"; }
+body header { background: #663399; height: 60px; margin-bottom: 15px; text-align: center; color: white; }
+body header h1 { margin: 0; padding-top: 15px; font-weight: 100; font-size: 28px; }
 body main { padding: 0 10px; }
-body main .task-container { padding-top: 20px; }
+body main .task-container { padding: 20px 0 10px; }
 body main .task-container input { width: 100%; font-size: 16px; padding: 10px; border-radius: 4px; border-style: solid; border-width: 1.5px; }
-body main .alert { color: red; display: none; }
+body main .task-container input:focus { outline: none !important; border: 1.8px solid #663399; }
+body main .alert { color: #cf150a; display: none; }
+body main .task-list { padding-left: 0; margin: 10px 0 0; }
+
+.list-item { padding: 15px 0 15px; border: 1px solid black; border-left: none; border-right: none; margin-bottom: 15px; }
+.list-item span { padding-right: 15px; }
 
 /*# sourceMappingURL=main.css.map */

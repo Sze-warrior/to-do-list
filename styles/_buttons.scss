@@ -6,9 +6,20 @@
 	width: $btn-width;
 	height: $btn-height;
 	color: $white;
-	background-color: $green;
+	background-color: $color-green;
 	@include border-radius(4px);
     margin-left: 15px;
     font-size: $btn-font-size;
     border: none;
+    @include transition(0.5s);
+
+    &:focus{
+		background-color: darken($color-green, 8%);
+    }
+
+    &:hover{
+    	background-color: darken($color-green, 8%);
+    	@include transition(0.5s);
+
+    }
 }
