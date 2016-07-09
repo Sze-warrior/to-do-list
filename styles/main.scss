@@ -1,17 +1,10 @@
 @import "variables";
 @import "buttons";
-
-body{
-	background: $blue;
-	color: $white;
-}
+@import "table-layout";
+@import "layout";
+@import "mixins";
 
 .task-list{
-}
-
-
-input {
-	
 }
 
 .list-item {

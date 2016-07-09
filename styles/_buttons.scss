@@ -1,9 +1,14 @@
 @import "variables";
+@import "mixins";
 
 .btn-add {
 
-	width: 80px;
-	height: 80px;
+	width: $btn-width;
+	height: $btn-height;
 	color: $white;
 	background-color: $green;
+	@include border-radius(4px);
+    margin-left: 15px;
+    font-size: $btn-font-size;
+    border: none;
 }
