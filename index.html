@@ -8,25 +8,36 @@
 
 <body>
 	
+	<header>
+
+		<h1>To do list</h1>
+	
+	</header>
+
 <main>
 	<section>
-		<div>
-			<p>Hi this is the start of my To do list mobile site.</p>
 
+		<div class="table-container task-container">
+			<div class="table-cell">	
 				<input type="text" name="ListItem">
-				<button class="btn-add">Add New List Item</button>
+			</div>
+			<div class="table-cell">	
+				<button class="btn-add">Add</button>
+			</div>
+		</div>
 
-			<ul class="task-list">
-			</ul>
+		<div class="table-container">
+			<div class="table-cell">
+				<ul class="task-list"></ul>				
+			</div>		
 		</div>
 	</section>
 </main>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 	if (typeof jQuery == 'undefined') {
-		document.write('<script src="js/jquery-1.12.0.min.js">\x3C/script>');
+		document.write('<script src="js/jquery.min.js">\x3C/script>');
 }
 	</script><script src="js/to-do-list-functions.js"></script>
 </body>
