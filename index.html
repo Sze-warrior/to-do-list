@@ -15,20 +15,24 @@
 	</header>
 
 <main>
-	<section>
+	<section class="container">
 	<div class="alert">Hmm it seems you haven't entered in a task yet..</div>
 		<div class="table-container task-container">
 			<div class="table-cell">	
-				<input type="text" name="ListItem">
+				<input type="text" name="ListItem" maxlength="50">
 			</div>
 			<div class="table-cell">	
 				<button class="btn-add">Add</button>
 			</div>
 		</div>
+	</section>
 
-		<div class="table-container">
+	<section>
+		<div class="table-container task-list-container">
 			<div class="table-cell">
-				<ul class="task-list"></ul>				
+				<ul class="task-list">
+					
+				</ul>				
 			</div>		
 		</div>
 	</section>

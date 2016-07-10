@@ -8,14 +8,16 @@
 body { margin: 0; padding: 0; color: red; font-family: "Helvetica", "Arial", "Times new roman"; }
 body header { background: #663399; height: 60px; margin-bottom: 15px; text-align: center; color: white; }
 body header h1 { margin: 0; padding-top: 15px; font-weight: 100; font-size: 28px; }
-body main { padding: 0 10px; }
-body main .task-container { padding: 20px 0 10px; }
-body main .task-container input { width: 100%; font-size: 16px; padding: 10px; border-radius: 4px; border-style: solid; border-width: 1.5px; }
-body main .task-container input:focus { outline: none !important; border: 1.8px solid #663399; }
-body main .alert { color: #cf150a; display: none; }
-body main .task-list { padding-left: 0; margin: 10px 0 0; }
+body main section.container { padding: 0 10px; }
+body main section .task-container { padding: 20px 0 10px; }
+body main section .task-container input { width: 100%; font-size: 16px; padding: 10px; border-radius: 4px; border-style: solid; border-width: 1.5px; }
+body main section .task-container input:focus { outline: none !important; border: 1.8px solid #663399; }
+body main section .alert { color: #cf150a; display: none; }
+body main section .task-list { padding-left: 0; margin: 10px 0 0; }
 
-.list-item { padding: 15px 0 15px; border: 1px solid black; border-left: none; border-right: none; margin-bottom: 15px; }
+.list-item { padding: 15px 10px; border: 1px solid black; border-left: none; border-right: none; margin-bottom: 15px; }
 .list-item span { padding-right: 15px; }
+
+.delete { margin-left: 15px; }
 
 /*# sourceMappingURL=main.css.map */

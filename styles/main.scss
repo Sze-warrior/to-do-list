@@ -4,12 +4,16 @@
 @import "layout";
 @import "mixins";
 
+.task-list-container{
+
+}
+
 .task-list{
 }
 
 .list-item {
 
-    padding: 15px 0 15px;
+    padding: 15px 10px;
     border: 1px solid black;
     border-left: none;
     border-right: none;
@@ -21,5 +25,6 @@
 }
 
 .delete {
-	
+	margin-left: 15px;
 }
+
