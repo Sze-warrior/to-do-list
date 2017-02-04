@@ -23,3 +23,12 @@
 
     }
 }
+
+.delete{
+    color: $color-purple;
+    border-bottom: 1px dotted $color-purple;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
